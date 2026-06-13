@@ -1,8 +1,12 @@
+"use client";
+
+import { useState } from "react";
+
 import { cn } from "@/lib/utils";
 import type { Tool } from "@/types/tool";
 
-// Paleta de acentos para los monogramas. El índice se deriva del slug de forma
-// determinista, así cada herramienta tiene siempre el mismo color.
+// Paleta de acentos para los monogramas (fallback). El índice se deriva del
+// slug de forma determinista, así cada herramienta tiene siempre el mismo color.
 const PALETTE = [
   "#6366f1",
   "#8b5cf6",
@@ -33,10 +37,25 @@ function monogram(name: string): string {
   return clean.slice(0, 2).toUpperCase();
 }
 
+/** Extrae el dominio (sin "www.") de la URL de la herramienta. */
+function domainFromUrl(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+}
+
+const SIZES = {
+  sm: { box: "h-9 w-9 rounded-lg text-xs", pad: "p-1" },
+  md: { box: "h-11 w-11 rounded-xl text-sm", pad: "p-1.5" },
+  lg: { box: "h-16 w-16 rounded-2xl text-lg", pad: "p-2.5" },
+} as const;
+
 /**
- * Logo provisional: monograma sobre un cuadrado con color de marca derivado
- * del slug. Cuando se disponga de logos reales, este componente es el único
- * punto que habría que cambiar.
+ * Logo de la herramienta. Intenta cargar el favicon real del sitio (derivado
+ * del dominio) sobre una baldosa clara estilo "app icon"; si la imagen falla,
+ * cae automáticamente a un monograma de color determinista.
  */
 export function ToolLogo({
   tool,
@@ -47,23 +66,43 @@ export function ToolLogo({
   size?: "sm" | "md" | "lg";
   className?: string;
 }) {
-  const color = colorForSlug(tool.slug);
-  const sizes = {
-    sm: "h-9 w-9 text-xs rounded-lg",
-    md: "h-11 w-11 text-sm rounded-xl",
-    lg: "h-16 w-16 text-lg rounded-2xl",
-  } as const;
+  const [failed, setFailed] = useState(false);
+  const domain = domainFromUrl(tool.url);
+  const s = SIZES[size];
 
+  // Favicon real del sitio (servicio de Google, sin API key).
+  if (domain && !failed) {
+    return (
+      <div
+        className={cn(
+          "flex shrink-0 items-center justify-center bg-white shadow-sm",
+          s.box,
+          s.pad,
+          className,
+        )}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`https://www.google.com/s2/favicons?domain=${domain}&sz=128`}
+          alt={`Logo de ${tool.name}`}
+          loading="lazy"
+          onError={() => setFailed(true)}
+          className="h-full w-full object-contain"
+        />
+      </div>
+    );
+  }
+
+  // Fallback: monograma de color.
+  const color = colorForSlug(tool.slug);
   return (
     <div
       className={cn(
         "flex shrink-0 items-center justify-center font-semibold text-white shadow-sm",
-        sizes[size],
+        s.box,
         className,
       )}
-      style={{
-        background: `linear-gradient(135deg, ${color}, ${color}cc)`,
-      }}
+      style={{ background: `linear-gradient(135deg, ${color}, ${color}cc)` }}
       aria-hidden
     >
       {monogram(tool.name)}
