@@ -5,7 +5,7 @@ import { Grid3x3, Layers, Star, Clock } from "lucide-react";
 import { PageHeader, Section } from "@/components/section";
 import { EmptyState, ToolGrid } from "@/components/tool-grid";
 import { CATEGORIES } from "@/data/categories";
-import { resolveTools, TOOLS } from "@/data/tools";
+import { approxToolCount, resolveTools } from "@/data/tools";
 import { useWorkspace } from "@/lib/workspace-context";
 
 // Selección curada de herramientas recomendadas para el estado inicial.
@@ -28,7 +28,7 @@ export default function DashboardPage() {
   const recommended = resolveTools(RECOMMENDED_SLUGS);
 
   const stats = [
-    { label: "Herramientas", value: TOOLS.length, icon: Grid3x3 },
+    { label: "Herramientas", value: approxToolCount(), icon: Grid3x3 },
     { label: "Categorías", value: CATEGORIES.length, icon: Layers },
     { label: "Favoritos", value: ready ? favorites.length : "—", icon: Star },
     { label: "Recientes", value: ready ? recents.length : "—", icon: Clock },

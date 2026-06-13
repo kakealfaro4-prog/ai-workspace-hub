@@ -1,6 +1,6 @@
 import { PageHeader } from "@/components/section";
 import { ToolGrid } from "@/components/tool-grid";
-import { TOOLS } from "@/data/tools";
+import { approxToolCount, TOOLS } from "@/data/tools";
 
 export const metadata = {
   title: "Todas las herramientas — AI Workspace Hub",
@@ -11,7 +11,7 @@ export default function AllToolsPage() {
     <>
       <PageHeader
         title="Todas las herramientas"
-        subtitle={`${TOOLS.length} herramientas de IA organizadas para ti.`}
+        subtitle={`${approxToolCount()} herramientas de IA organizadas para ti.`}
       />
       <ToolGrid tools={TOOLS} />
     </>

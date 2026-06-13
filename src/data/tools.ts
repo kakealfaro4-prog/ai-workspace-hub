@@ -1515,6 +1515,16 @@ export function getToolsByCategory(categoryId: CategoryId): Tool[] {
   return TOOLS.filter((t) => t.categories.includes(categoryId));
 }
 
+/**
+ * Conteo "de marketing": redondea a la centena inferior y antepone "+".
+ * Para 162 → "+100". Dinámico: escala solo conforme crece el catálogo y no
+ * hay que actualizarlo al añadir o quitar herramientas.
+ */
+export function approxToolCount(): string {
+  const floored = Math.floor(TOOLS.length / 100) * 100;
+  return floored >= 100 ? `+${floored}` : String(TOOLS.length);
+}
+
 /** Resuelve una lista de slugs a herramientas, preservando el orden e ignorando slugs huérfanos. */
 export function resolveTools(slugs: readonly string[]): Tool[] {
   return slugs
