@@ -13,6 +13,7 @@ import Link from "next/link";
 import { CategoryIcon } from "@/components/category-icon";
 import { Hero } from "@/components/landing/hero";
 import { LandingStats } from "@/components/landing/landing-stats";
+import { Reveal } from "@/components/landing/reveal";
 import { CATEGORIES } from "@/data/categories";
 import { TOOLS } from "@/data/tools";
 import { routes } from "@/lib/routes";
@@ -83,7 +84,7 @@ export default function LandingPage() {
 
       {/* Características */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <h2 className="text-2xl font-semibold tracking-tight text-fg sm:text-3xl">
             Tu centro de productividad con IA
           </h2>
@@ -91,11 +92,12 @@ export default function LandingPage() {
             Pensado para que encuentres y abras cualquier herramienta sin
             fricción.
           </p>
-        </div>
+        </Reveal>
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
-          {FEATURES.map(({ icon: Icon, title, text }) => (
-            <div
+          {FEATURES.map(({ icon: Icon, title, text }, i) => (
+            <Reveal
               key={title}
+              delay={i * 0.1}
               className="rounded-xl border border-border bg-bg-subtle p-6"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-soft text-accent">
@@ -103,14 +105,14 @@ export default function LandingPage() {
               </span>
               <h3 className="mt-4 font-medium text-fg">{title}</h3>
               <p className="mt-2 text-sm text-fg-muted">{text}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* Categorías */}
       <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
-        <div className="mb-8 flex items-end justify-between gap-4">
+        <Reveal className="mb-8 flex items-end justify-between gap-4">
           <h2 className="text-2xl font-semibold tracking-tight text-fg sm:text-3xl">
             Explora por categoría
           </h2>
@@ -120,26 +122,29 @@ export default function LandingPage() {
           >
             Ver todo →
           </Link>
-        </div>
+        </Reveal>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          {CATEGORIES.map((category) => (
-            <Link
-              key={category.id}
-              href={routes.category(category.id)}
-              className="flex items-center gap-3 rounded-xl border border-border bg-bg-subtle px-4 py-3 transition-colors hover:border-border-strong hover:bg-bg-muted"
-            >
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-bg-muted text-accent">
-                <CategoryIcon name={category.icon} className="h-4 w-4" />
-              </span>
-              <span className="truncate text-sm text-fg">{category.label}</span>
-            </Link>
+          {CATEGORIES.map((category, i) => (
+            <Reveal key={category.id} delay={Math.min(i * 0.03, 0.3)}>
+              <Link
+                href={routes.category(category.id)}
+                className="flex h-full w-full items-center gap-3 rounded-xl border border-border bg-bg-subtle px-4 py-3 transition-colors hover:border-border-strong hover:bg-bg-muted"
+              >
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-bg-muted text-accent">
+                  <CategoryIcon name={category.icon} className="h-4 w-4" />
+                </span>
+                <span className="truncate text-sm text-fg">
+                  {category.label}
+                </span>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* CTA final */}
       <section className="border-t border-border">
-        <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6">
+        <Reveal className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6">
           <h2 className="text-2xl font-semibold tracking-tight text-fg sm:text-3xl">
             ¿List@ para trabajar más rápido con IA?
           </h2>
@@ -154,7 +159,7 @@ export default function LandingPage() {
             Abrir workspace
             <ArrowRight className="h-4 w-4" aria-hidden />
           </Link>
-        </div>
+        </Reveal>
       </section>
 
       {/* Footer */}
