@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Deja de recordar decenas de webs. Accede, organiza y abre las mejores herramientas de inteligencia artificial desde un único espacio rápido y minimalista.",
 };
 
-const GITHUB_URL = "https://github.com/kakealfaro4-prog/ai-workspace-hub";
+const GITHUB_URL = "https://github.com/jordan4-prog/ai-workspace-hub";
 
 const FEATURES = [
   {
