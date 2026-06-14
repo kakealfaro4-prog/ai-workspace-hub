@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 import { FavoriteButton } from "@/components/favorite-button";
 import { ToolLogo } from "@/components/tool-logo";
@@ -9,16 +12,28 @@ import { cn } from "@/lib/utils";
 import type { Tool } from "@/types/tool";
 
 /**
- * Tarjeta de herramienta (estilo directorio). Toda la superficie enlaza a la
- * ficha; el botón de favorito detiene la propagación. Hover con elevación y
- * glow cian — la única licencia visual atrevida, usada con intención.
+ * Tarjeta de herramienta (estilo directorio).
+ *
+ * Es un enlace REAL a la ficha (SEO + cmd/ctrl-click abren la página en una
+ * pestaña nueva), pero en clic normal abre el panel lateral vía ?toolId.
+ * El botón de favorito detiene la propagación. Hover con elevación + glow cian.
  */
 export function ToolCard({ tool }: { tool: Tool }) {
+  const router = useRouter();
+  const pathname = usePathname();
   const pricing = getPricing(tool.slug);
+
+  const handleClick = (e: React.MouseEvent) => {
+    // Respeta cmd/ctrl/shift/middle-click → deja que el enlace abra la ficha.
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+    e.preventDefault();
+    router.push(`${pathname}?toolId=${tool.slug}`, { scroll: false });
+  };
 
   return (
     <Link
       href={routes.tool(tool.slug)}
+      onClick={handleClick}
       className="group flex flex-col gap-3 rounded-2xl border border-border bg-bg-subtle p-5 transition-all duration-200 hover:-translate-y-1 hover:border-accent/40 hover:bg-bg-muted hover:shadow-xl hover:shadow-accent-glow"
     >
       <div className="flex items-start justify-between gap-3">
