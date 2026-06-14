@@ -16,7 +16,7 @@ export function ToolCard({ tool }: { tool: Tool }) {
   return (
     <Link
       href={routes.tool(tool.slug)}
-      className="group flex flex-col gap-4 rounded-xl border border-border bg-bg-subtle p-4 transition-colors hover:border-border-strong hover:bg-bg-muted"
+      className="group flex flex-col gap-4 rounded-xl border border-border bg-bg-subtle p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-border-strong hover:bg-bg-muted hover:shadow-lg hover:shadow-black/20"
     >
       <div className="flex items-start justify-between gap-3">
         <ToolLogo tool={tool} size="md" />

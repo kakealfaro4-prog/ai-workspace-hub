@@ -1,6 +1,6 @@
 "use client";
 
-import { Grid3x3, Layers, Star, Clock } from "lucide-react";
+import { Cloud, Grid3x3, Layers, Star, Clock } from "lucide-react";
 
 import { PageHeader, Section } from "@/components/section";
 import { EmptyState, ToolGrid } from "@/components/tool-grid";
@@ -22,7 +22,7 @@ const RECOMMENDED_SLUGS = [
 ];
 
 export default function DashboardPage() {
-  const { favorites, recents, ready } = useWorkspace();
+  const { favorites, recents, ready, cloud } = useWorkspace();
 
   const favoriteTools = resolveTools(favorites);
   const recentTools = resolveTools(recents.map((r) => r.slug));
@@ -37,6 +37,13 @@ export default function DashboardPage() {
 
   return (
     <>
+      {cloud && (
+        <div className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-bg-subtle px-3 py-1 text-xs text-fg-muted">
+          <Cloud className="h-3.5 w-3.5 text-accent" aria-hidden />
+          Favoritos sincronizados en la nube
+        </div>
+      )}
+
       <PageHeader
         title="Tu espacio de trabajo de IA"
         subtitle="Un único lugar para acceder a todas tus herramientas de inteligencia artificial."
@@ -46,14 +53,16 @@ export default function DashboardPage() {
         {stats.map(({ label, value, icon: Icon }) => (
           <div
             key={label}
-            className="flex items-center gap-3 rounded-xl border border-border bg-bg-subtle p-4"
+            className="flex items-center gap-3 rounded-xl border border-border bg-bg-subtle p-4 transition-colors hover:border-border-strong"
           >
-            <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-bg-muted text-accent">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-soft text-accent">
               <Icon className="h-5 w-5" aria-hidden />
             </span>
-            <div>
-              <p className="text-xl font-semibold text-fg">{value}</p>
-              <p className="text-xs text-fg-subtle">{label}</p>
+            <div className="min-w-0">
+              <p className="text-2xl font-semibold tracking-tight text-fg">
+                {value}
+              </p>
+              <p className="truncate text-xs text-fg-subtle">{label}</p>
             </div>
           </div>
         ))}
