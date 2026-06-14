@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 
 import { AppShell } from "@/components/app-shell";
+import { CommandPalette } from "@/components/workspace/command-palette";
 import { ToolPanel } from "@/components/workspace/tool-panel";
 import { AuthProvider } from "@/lib/auth-context";
 import { CollectionsProvider } from "@/lib/collections-context";
@@ -22,6 +23,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         <ReviewsProvider>
           <WorkspaceProvider>
             <AppShell>{children}</AppShell>
+            <CommandPalette />
             <Suspense fallback={null}>
               <ToolPanel />
             </Suspense>

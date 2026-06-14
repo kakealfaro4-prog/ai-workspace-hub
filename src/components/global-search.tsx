@@ -53,7 +53,7 @@ export function GlobalSearch() {
           className="w-full bg-transparent text-sm text-fg outline-none placeholder:text-fg-subtle"
           aria-label="Buscar herramientas"
         />
-        {query && (
+        {query ? (
           <button
             type="button"
             onClick={() => setQuery("")}
@@ -61,6 +61,16 @@ export function GlobalSearch() {
             className="text-fg-subtle hover:text-fg"
           >
             <X className="h-4 w-4" aria-hidden />
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event("cmdk:open"))}
+            aria-label="Abrir buscador de comandos (Ctrl+K)"
+            title="Buscador de comandos (Ctrl/Cmd + K)"
+            className="hidden shrink-0 rounded border border-border px-1.5 py-0.5 text-[10px] font-medium text-fg-subtle transition-colors hover:text-fg sm:block"
+          >
+            ⌘K
           </button>
         )}
       </div>
