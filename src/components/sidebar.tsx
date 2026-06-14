@@ -31,7 +31,7 @@ export function Sidebar({ onClose }: { onClose?: () => void }) {
     <aside className="flex h-full w-64 shrink-0 flex-col border-r border-border bg-bg-subtle">
       <div className="flex items-center gap-2 px-5 py-5">
         <Link href={routes.dashboard} className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-bg-base">
             <Sparkles className="h-4 w-4" aria-hidden />
           </span>
           <span className="text-sm font-semibold tracking-tight text-fg">

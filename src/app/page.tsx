@@ -51,7 +51,7 @@ export default function LandingPage() {
       <header className="sticky top-0 z-30 border-b border-border bg-bg-base/80 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <Link href={routes.home} className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-white">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-bg-base">
               <Sparkles className="h-4 w-4" aria-hidden />
             </span>
             <span className="text-sm font-semibold tracking-tight text-fg">
@@ -67,7 +67,7 @@ export default function LandingPage() {
             </Link>
             <Link
               href={routes.dashboard}
-              className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
+              className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-bg-base transition-colors hover:bg-accent-hover"
             >
               Abrir workspace
               <ArrowRight className="h-4 w-4" aria-hidden />
@@ -154,7 +154,7 @@ export default function LandingPage() {
           </p>
           <Link
             href={routes.dashboard}
-            className="mt-8 inline-flex items-center gap-1.5 rounded-lg bg-accent px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
+            className="mt-8 inline-flex items-center gap-1.5 rounded-lg bg-accent px-6 py-3 text-sm font-medium text-bg-base transition-colors hover:bg-accent-hover"
           >
             Abrir workspace
             <ArrowRight className="h-4 w-4" aria-hidden />

@@ -80,11 +80,11 @@ export function Hero() {
         {/* Título con glow */}
         <motion.h1
           variants={fadeUp}
-          className="mt-6 text-5xl font-bold tracking-tight text-fg sm:text-7xl"
+          className="mt-6 font-display text-5xl font-bold tracking-tight text-fg sm:text-7xl"
         >
           Todas las herramientas de IA.
           <br />
-          <span className="bg-gradient-to-r from-[#7aa2ff] via-[#a78bfa] to-[#7c3aed] bg-clip-text text-transparent text-glow">
+          <span className="bg-gradient-to-r from-[#67E8F9] via-[#22D3EE] to-[#0891B2] bg-clip-text text-transparent text-glow">
             En un único lugar.
           </span>
         </motion.h1>
@@ -92,7 +92,7 @@ export function Hero() {
         {/* Línea de acento animada */}
         <motion.div
           variants={fadeUp}
-          className="mx-auto mt-7 h-[3px] w-36 origin-center rounded-full bg-gradient-to-r from-[#5B4AED] to-[#7C3AED]"
+          className="mx-auto mt-7 h-[3px] w-36 origin-center rounded-full bg-gradient-to-r from-[#22D3EE] to-[#0891B2]"
           initial={{ scaleX: 0, opacity: 0 }}
           animate={{ scaleX: 1, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
@@ -114,7 +114,7 @@ export function Hero() {
         >
           <Link
             href={routes.dashboard}
-            className="group inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-[#5B4AED] to-[#7C3AED] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#5B4AED]/30 transition-all duration-200 hover:scale-[1.03] hover:shadow-xl hover:shadow-[#7C3AED]/40 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0f1e] sm:w-auto"
+            className="group inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-[#06B6D4] to-[#22D3EE] px-6 py-3 text-sm font-semibold text-bg-base shadow-lg shadow-[#22D3EE]/30 transition-all duration-200 hover:scale-[1.03] hover:shadow-xl hover:shadow-[#22D3EE]/40 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A] sm:w-auto"
           >
             Abrir workspace
             <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
@@ -152,7 +152,7 @@ export function Hero() {
                       }
                 }
                 whileHover={{ scale: 1.18 }}
-                className="cursor-default rounded-2xl transition-shadow duration-200 hover:shadow-lg hover:shadow-[#7C3AED]/30"
+                className="cursor-default rounded-2xl transition-shadow duration-200 hover:shadow-lg hover:shadow-[#22D3EE]/30"
               >
                 <ToolLogo tool={tool} size="lg" />
               </motion.div>

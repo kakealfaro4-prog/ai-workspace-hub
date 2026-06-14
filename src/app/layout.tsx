@@ -1,10 +1,14 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+});
 
 const SITE_URL = "https://ai-tools-hub-rho-mocha.vercel.app";
 const TITLE = "AI Workspace Hub — Todas tus herramientas de IA en un solo lugar";
@@ -44,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`dark ${inter.variable}`}>
+    <html lang="es" className={`dark ${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="font-sans">
         {children}
         <Analytics />

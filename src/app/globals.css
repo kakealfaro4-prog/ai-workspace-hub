@@ -34,15 +34,15 @@ body {
 
 /* ── Animaciones de la landing ──────────────────────────────────────────── */
 
-/* Gradiente de fondo que se desplaza lentamente (azul → púrpura → oscuro). */
+/* Gradiente de fondo que se desplaza lentamente (navy → teal → navy). */
 .animated-gradient {
   background: linear-gradient(
     130deg,
-    #0f0f1e 0%,
-    #1a1740 28%,
-    #3b2a8c 50%,
-    #1a1740 72%,
-    #0f0f1e 100%
+    #0a0e1a 0%,
+    #0c1a2e 28%,
+    #0e4a5e 50%,
+    #0c1a2e 72%,
+    #0a0e1a 100%
   );
   background-size: 220% 220%;
   animation: gradient-pan 18s ease infinite;
@@ -60,11 +60,26 @@ body {
   }
 }
 
-/* Glow suave para palabras clave del título. */
+/* Glow suave (cian) para palabras clave del título. */
 .text-glow {
   text-shadow:
-    0 0 24px rgba(124, 58, 237, 0.55),
-    0 0 48px rgba(91, 74, 237, 0.35);
+    0 0 24px rgba(34, 211, 238, 0.5),
+    0 0 48px rgba(34, 211, 238, 0.3);
+}
+
+/* Mesh gradient sutil para cabeceras (cian, baja opacidad). */
+.mesh-bg {
+  background-image:
+    radial-gradient(
+      45% 60% at 18% 0%,
+      rgba(34, 211, 238, 0.1) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      40% 55% at 82% 12%,
+      rgba(34, 211, 238, 0.07) 0%,
+      transparent 60%
+    );
 }
 
 /* Respeta la preferencia del sistema de movimiento reducido: desactiva el

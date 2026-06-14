@@ -16,7 +16,7 @@ export default function NotFound() {
         </Link>
         <Link
           href={routes.dashboard}
-          className="inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white hover:bg-accent-hover"
+          className="inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-medium text-bg-base hover:bg-accent-hover"
         >
           Abrir workspace
         </Link>

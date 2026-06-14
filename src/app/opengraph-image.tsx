@@ -27,7 +27,7 @@ export default function OpengraphImage() {
           justifyContent: "center",
           padding: "80px",
           background:
-            "linear-gradient(135deg, #0f0f1e 0%, #1a1740 45%, #3b2a8c 100%)",
+            "linear-gradient(135deg, #0A0E1A 0%, #0c1a2e 45%, #0e4a5e 100%)",
           color: "#ededef",
           fontFamily: "sans-serif",
         }}
@@ -47,7 +47,7 @@ export default function OpengraphImage() {
               width: 16,
               height: 16,
               borderRadius: 999,
-              background: "#7c3aed",
+              background: "#22D3EE",
             }}
           />
           {approxToolCount()} herramientas de IA · {CATEGORIES.length} categorías
@@ -66,7 +66,7 @@ export default function OpengraphImage() {
           }}
         >
           <span>Todas tus herramientas de IA.</span>
-          <span style={{ color: "#a78bfa" }}>En un único lugar.</span>
+          <span style={{ color: "#67E8F9" }}>En un único lugar.</span>
         </div>
 
         {/* Subtítulo */}
@@ -101,10 +101,10 @@ export default function OpengraphImage() {
               width: 48,
               height: 48,
               borderRadius: 12,
-              background: "linear-gradient(135deg, #5B4AED, #7C3AED)",
+              background: "linear-gradient(135deg, #06B6D4, #22D3EE)",
               fontSize: 22,
               fontWeight: 700,
-              color: "#ffffff",
+              color: "#0A0E1A",
             }}
           >
             AI

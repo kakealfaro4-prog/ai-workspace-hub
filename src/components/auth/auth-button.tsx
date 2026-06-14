@@ -54,7 +54,7 @@ export function AuthButton() {
         type="button"
         onClick={() => setMenuOpen((o) => !o)}
         aria-label="Menú de cuenta"
-        className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
+        className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-sm font-semibold text-bg-base transition-colors hover:bg-accent-hover"
       >
         {initial}
       </button>

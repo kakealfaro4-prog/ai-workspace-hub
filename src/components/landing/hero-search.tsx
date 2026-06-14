@@ -59,7 +59,7 @@ export function HeroSearch() {
       className="relative mx-auto w-full max-w-xl text-left"
     >
       {/* Campo de búsqueda */}
-      <div className="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/5 px-4 py-3 shadow-lg shadow-black/20 backdrop-blur transition-colors focus-within:border-[#7C3AED]/70">
+      <div className="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/5 px-4 py-3 shadow-lg shadow-black/20 backdrop-blur transition-colors focus-within:border-[#22D3EE]/70">
         <Search className="h-5 w-5 shrink-0 text-fg-subtle" aria-hidden />
         <input
           value={query}
@@ -91,7 +91,7 @@ export function HeroSearch() {
               setQuery(chip);
               setFocused(true);
             }}
-            className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-fg-muted transition-colors hover:border-white/25 hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7C3AED]/60"
+            className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-fg-muted transition-colors hover:border-white/25 hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#22D3EE]/60"
           >
             {chip}
           </button>
