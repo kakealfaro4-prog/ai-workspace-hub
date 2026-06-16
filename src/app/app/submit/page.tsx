@@ -2,7 +2,7 @@ import { PageHeader } from "@/components/section";
 import { SubmitToolForm } from "@/components/workspace/submit-tool-form";
 
 export const metadata = {
-  title: "Enviar herramienta — AI Workspace Hub",
+  title: "Enviar herramienta — AI Tools Hub",
   description:
     "¿Conoces una herramienta de IA que falta? Propónla y la añadiremos al catálogo.",
 };

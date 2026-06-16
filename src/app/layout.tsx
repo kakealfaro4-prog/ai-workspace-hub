@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 const SITE_URL = "https://ai-tools-hub-rho-mocha.vercel.app";
-const TITLE = "AI Workspace Hub — Todas tus herramientas de IA en un solo lugar";
+const TITLE = "AI Tools Hub — Todas tus herramientas de IA en un solo lugar";
 const DESCRIPTION =
   "Un único espacio para acceder, organizar y abrir las mejores herramientas de inteligencia artificial. Rápido, minimalista y gratis.";
 
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_ES",
     url: SITE_URL,
-    siteName: "AI Workspace Hub",
+    siteName: "AI Tools Hub",
     title: TITLE,
     description: DESCRIPTION,
   },

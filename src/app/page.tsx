@@ -12,7 +12,7 @@ import { TOOLS } from "@/data/tools";
 import { routes } from "@/lib/routes";
 
 export const metadata: Metadata = {
-  title: "AI Workspace Hub — Todas tus herramientas de IA en un solo lugar",
+  title: "AI Tools Hub — Todas tus herramientas de IA en un solo lugar",
   description:
     "Deja de recordar decenas de webs. Accede, organiza y abre las mejores herramientas de inteligencia artificial desde un único espacio rápido y minimalista.",
 };
@@ -46,7 +46,7 @@ export default function LandingPage() {
           <Link href={routes.home} className="flex items-center gap-2">
             <BrandMark className="h-8 w-8 text-accent" />
             <span className="text-sm font-semibold tracking-tight text-fg">
-              AI Workspace Hub
+              AI Tools Hub
             </span>
           </Link>
           <div className="flex items-center gap-2 sm:gap-3">
@@ -157,7 +157,7 @@ export default function LandingPage() {
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 text-sm text-fg-subtle sm:flex-row sm:px-6">
           <span className="flex items-center gap-2">
-            <Clock className="h-4 w-4" aria-hidden />© 2026 AI Workspace Hub
+            <Clock className="h-4 w-4" aria-hidden />© 2026 AI Tools Hub
           </span>
           <a
             href={GITHUB_URL}

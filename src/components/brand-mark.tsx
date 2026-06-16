@@ -1,5 +1,5 @@
 /**
- * Símbolo de marca de AI Workspace Hub: un hexágono de nodos conectados
+ * Símbolo de marca de AI Tools Hub: un hexágono de nodos conectados
  * (la idea de "hub" que enlaza herramientas). Es SVG con `currentColor`, así
  * que hereda el color del texto (cian por defecto) y se ve nítido a cualquier
  * tamaño: sidebar, favicon, móvil, OG image. Versión vectorial del logo.
@@ -11,7 +11,7 @@ export function BrandMark({ className }: { className?: string }) {
       className={className}
       fill="none"
       role="img"
-      aria-label="AI Workspace Hub"
+      aria-label="AI Tools Hub"
     >
       {/* Aristas del hexágono + radios internos hacia el nodo central */}
       <g

@@ -1,4 +1,4 @@
-# AI Workspace Hub
+# AI Tools Hub
 
 > Un único lugar para acceder a todas las herramientas de IA sin tener que recordar decenas de páginas web.
 

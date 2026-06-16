@@ -6,7 +6,7 @@ import { CATEGORIES } from "@/data/categories";
 export const runtime = "edge";
 
 export const alt =
-  "AI Workspace Hub — Todas tus herramientas de IA en un solo lugar";
+  "AI Tools Hub — Todas tus herramientas de IA en un solo lugar";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -109,7 +109,7 @@ export default function OpengraphImage() {
           >
             AI
           </div>
-          AI Workspace Hub
+          AI Tools Hub
         </div>
       </div>
     ),

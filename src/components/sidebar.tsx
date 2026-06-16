@@ -46,7 +46,7 @@ export function Sidebar({ onClose }: { onClose?: () => void }) {
         <Link href={routes.dashboard} className="flex items-center gap-2">
           <BrandMark className="h-8 w-8 text-accent" />
           <span className="text-sm font-semibold tracking-tight text-fg">
-            AI Workspace Hub
+            AI Tools Hub
           </span>
         </Link>
         {onClose && (

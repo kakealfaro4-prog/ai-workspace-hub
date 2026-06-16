@@ -25,7 +25,7 @@ export async function generateMetadata({
   const tool = getToolBySlug(slug);
   if (!tool) return { title: "Herramienta no encontrada" };
   return {
-    title: `${tool.name} — AI Workspace Hub`,
+    title: `${tool.name} — AI Tools Hub`,
     description: tool.description,
   };
 }
