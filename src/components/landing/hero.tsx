@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { HeroSearch } from "@/components/landing/hero-search";
@@ -68,6 +69,19 @@ export function Hero() {
         animate="show"
         className="mx-auto max-w-4xl px-4 py-24 text-center sm:px-6 sm:py-32"
       >
+        {/* Logo de marca (banner). mix-blend-screen funde el fondo navy del
+            PNG con el degradado, dejando brillar solo el hexágono + texto. */}
+        <motion.div variants={scaleIn} className="mb-8 flex justify-center">
+          <Image
+            src="/logo.png"
+            alt="AI Tools Hub"
+            width={1408}
+            height={768}
+            priority
+            className="h-auto w-64 mix-blend-screen sm:w-80"
+          />
+        </motion.div>
+
         {/* Badge */}
         <motion.span
           variants={fadeUp}
