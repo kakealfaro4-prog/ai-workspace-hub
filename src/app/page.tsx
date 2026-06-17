@@ -18,6 +18,28 @@ export const metadata: Metadata = {
 };
 
 const GITHUB_URL = "https://github.com/jordan4-prog/ai-workspace-hub";
+const SITE_URL = "https://getaitoolshub.com";
+
+// Datos estructurados (JSON-LD): ayudan a Google a entender que esto es una web
+// llamada "AI Tools Hub", con su logo y descripción, para resultados más ricos.
+const JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "AI Tools Hub",
+  alternateName: "getaitoolshub",
+  url: SITE_URL,
+  description:
+    "Directorio para acceder, organizar y abrir más de 100 herramientas de inteligencia artificial desde un solo lugar.",
+  publisher: {
+    "@type": "Organization",
+    name: "AI Tools Hub",
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+  },
+};
 
 const FEATURES = [
   {
@@ -40,6 +62,11 @@ const FEATURES = [
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-bg-base">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
+      />
+
       {/* Barra de navegación */}
       <header className="sticky top-0 z-30 border-b border-border bg-bg-base/80 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
