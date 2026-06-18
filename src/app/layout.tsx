@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -67,6 +68,11 @@ export default function RootLayout({
       <body className="font-sans">
         {children}
         <Analytics />
+        {/* Banner de consentimiento de cookies (iubenda Cookie Solution). */}
+        <Script
+          src="https://embeds.iubenda.com/widgets/356bada1-71d4-48d1-a752-ff80aadf4116.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
