@@ -9,6 +9,7 @@ import { LandingStats } from "@/components/landing/landing-stats";
 import { Reveal } from "@/components/landing/reveal";
 import { CATEGORIES } from "@/data/categories";
 import { TOOLS } from "@/data/tools";
+import { LEGAL } from "@/lib/legal";
 import { routes } from "@/lib/routes";
 
 export const metadata: Metadata = {
@@ -192,15 +193,33 @@ export default function LandingPage() {
           <span className="flex items-center gap-2">
             <Clock className="h-4 w-4" aria-hidden />© 2026 AI Tools Hub
           </span>
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 transition-colors hover:text-fg"
-          >
-            <Github className="h-4 w-4" aria-hidden />
-            Código en GitHub
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            <a
+              href={LEGAL.privacy}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-fg"
+            >
+              Privacidad
+            </a>
+            <a
+              href={LEGAL.cookies}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-fg"
+            >
+              Cookies
+            </a>
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-fg"
+            >
+              <Github className="h-4 w-4" aria-hidden />
+              GitHub
+            </a>
+          </div>
         </div>
       </footer>
     </div>

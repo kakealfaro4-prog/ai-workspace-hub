@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 import { BrandMark } from "@/components/brand-mark";
+import { LEGAL } from "@/lib/legal";
 import { routes } from "@/lib/routes";
 
 /** Layout público del blog: cabecera y pie propios, fuera del workspace. */
@@ -41,15 +42,30 @@ export default function BlogLayout({
       {children}
 
       <footer className="border-t border-border">
-        <div className="mx-auto max-w-3xl px-4 py-8 text-sm text-fg-subtle sm:px-6">
-          © 2026 AI Tools Hub ·{" "}
+        <div className="mx-auto flex max-w-3xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-8 text-sm text-fg-subtle sm:px-6">
+          <span>© 2026 AI Tools Hub</span>
           <Link href={routes.home} className="transition-colors hover:text-fg">
             Inicio
-          </Link>{" "}
-          ·{" "}
+          </Link>
           <Link href={routes.tools} className="transition-colors hover:text-fg">
             Herramientas
           </Link>
+          <a
+            href={LEGAL.privacy}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-fg"
+          >
+            Privacidad
+          </a>
+          <a
+            href={LEGAL.cookies}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-fg"
+          >
+            Cookies
+          </a>
         </div>
       </footer>
     </div>

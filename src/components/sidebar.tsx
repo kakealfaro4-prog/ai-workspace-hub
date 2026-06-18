@@ -19,6 +19,7 @@ import { BrandMark } from "@/components/brand-mark";
 import { CategoryIcon } from "@/components/category-icon";
 import { CATEGORIES } from "@/data/categories";
 import { useCollections } from "@/lib/collections-context";
+import { LEGAL } from "@/lib/legal";
 import { routes } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 import { useWorkspace } from "@/lib/workspace-context";
@@ -113,6 +114,25 @@ export function Sidebar({ onClose }: { onClose?: () => void }) {
           <span className="flex-1 truncate">Enviar herramienta</span>
         </Link>
       </nav>
+
+      <div className="flex items-center gap-3 border-t border-border px-5 py-3 text-xs text-fg-subtle">
+        <a
+          href={LEGAL.privacy}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-colors hover:text-fg"
+        >
+          Privacidad
+        </a>
+        <a
+          href={LEGAL.cookies}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-colors hover:text-fg"
+        >
+          Cookies
+        </a>
+      </div>
     </aside>
   );
 }
