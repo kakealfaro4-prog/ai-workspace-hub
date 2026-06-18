@@ -1555,6 +1555,69 @@ export const TOOLS: readonly Tool[] = [
     categories: ["programacion", "chatbots"],
     tags: ["google", "open-source", "modelo", "ligero"],
   },
+  {
+    slug: "n8n",
+    name: "n8n",
+    url: "https://n8n.io",
+    description:
+      "Plataforma de automatización de flujos open source con nodos de IA para conectar apps y crear agentes.",
+    categories: ["automatizacion", "programacion"],
+    tags: ["automatización", "workflows", "open-source", "agentes"],
+  },
+  {
+    slug: "make",
+    name: "Make",
+    url: "https://www.make.com",
+    description:
+      "Automatiza tareas y conecta miles de apps con un editor visual de flujos potenciado por IA.",
+    categories: ["automatizacion", "productividad"],
+    tags: ["automatización", "no-code", "integraciones", "workflows"],
+  },
+  {
+    slug: "zapier",
+    name: "Zapier",
+    url: "https://zapier.com",
+    description:
+      "El conector de apps más popular: automatiza flujos entre miles de herramientas con ayuda de IA.",
+    categories: ["automatizacion", "productividad"],
+    tags: ["automatización", "no-code", "integraciones", "zaps"],
+  },
+  {
+    slug: "gumloop",
+    name: "Gumloop",
+    url: "https://www.gumloop.com",
+    description:
+      "Plataforma no-code para crear automatizaciones complejas impulsadas por IA arrastrando bloques.",
+    categories: ["automatizacion", "productividad"],
+    tags: ["automatización", "no-code", "ia", "workflows"],
+  },
+  {
+    slug: "relevance-ai",
+    name: "Relevance AI",
+    url: "https://relevanceai.com",
+    description:
+      "Construye y despliega equipos de agentes de IA que ejecutan tareas y procesos de negocio.",
+    categories: ["automatizacion", "negocios"],
+    tags: ["agentes", "automatización", "ia", "equipos"],
+  },
+  {
+    slug: "bardeen-ai",
+    name: "Bardeen AI",
+    url: "https://www.bardeen.ai",
+    description:
+      "Automatiza tareas repetitivas del navegador y flujos de ventas con un copiloto de IA.",
+    categories: ["automatizacion", "productividad"],
+    tags: ["automatización", "navegador", "ventas", "copiloto"],
+  },
+  {
+    slug: "clay",
+    name: "Clay",
+    url: "https://www.clay.com",
+    description:
+      "Plataforma de prospección y enriquecimiento de datos con IA para automatizar la captación de clientes.",
+    categories: ["automatizacion", "marketing"],
+    tags: ["datos", "ventas", "prospección", "ia"],
+  },
 ] as const;
 
 // --- Selectores de solo lectura sobre el catálogo --------------------------
