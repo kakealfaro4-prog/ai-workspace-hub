@@ -315,6 +315,280 @@ export const POSTS: BlogPost[] = [
       "No hay un único ganador: para uso general elige ChatGPT, para escribir Claude, para el ecosistema Google Gemini, y para investigar con fuentes Perplexity. Lo mejor es probar y quedarte con el que mejor se adapte a ti.",
     ],
   },
+  {
+    slug: "mejores-ia-para-automatizar-trabajo",
+    title: "Las 7 mejores IA para automatizar tu trabajo en 2026",
+    description:
+      "Las mejores herramientas de IA para automatizar tareas, conectar apps y crear agentes: n8n, Make, Zapier y más, comparadas.",
+    date: "2026-06-18",
+    relatedCategory: "automatizacion",
+    intro: [
+      "Automatizar las tareas repetitivas es la forma más rápida de ganar horas cada semana. Con la inteligencia artificial, las plataformas de automatización ya no solo conectan apps: crean agentes que toman decisiones y ejecutan procesos por ti.",
+      "Estas son las 7 mejores IA para automatizar tu trabajo en 2026, desde conectores no-code hasta plataformas de agentes.",
+    ],
+    items: [
+      {
+        slug: "zapier",
+        body: "El conector de apps más popular del mundo: une miles de herramientas con flujos sencillos y ahora con pasos de IA. Ideal para empezar sin saber programar.",
+      },
+      {
+        slug: "make",
+        body: "Un editor visual muy potente para diseñar automatizaciones complejas arrastrando bloques. Más flexible que Zapier para flujos avanzados.",
+      },
+      {
+        slug: "n8n",
+        body: "Open source y orientado a quien quiere control total. Permite crear automatizaciones y agentes de IA, e incluso alojarlo en tu propio servidor.",
+      },
+      {
+        slug: "gumloop",
+        body: "Plataforma no-code centrada en la IA: encadena modelos y acciones para automatizar procesos como investigación o generación de contenido.",
+      },
+      {
+        slug: "relevance-ai",
+        body: "Te permite construir 'equipos' de agentes de IA que ejecutan tareas de negocio de principio a fin. Muy potente para ventas y operaciones.",
+      },
+      {
+        slug: "bardeen-ai",
+        body: "Automatiza tareas del navegador y flujos de ventas con un copiloto de IA. Perfecto para raspar datos, rellenar CRMs y ahorrar clics.",
+      },
+      {
+        slug: "clay",
+        body: "Especialista en prospección: enriquece datos de clientes potenciales con IA y automatiza la captación a escala.",
+      },
+    ],
+    outro: [
+      "Si empiezas, Zapier o Make son la puerta de entrada. Si buscas control total o crear agentes, n8n y Relevance AI te darán mucho más margen.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-marketing",
+    title: "Las 7 mejores IA para marketing y redes sociales en 2026",
+    description:
+      "Herramientas de IA para marketing: crear contenido, anuncios, SEO y gestionar redes sociales de forma más rápida y efectiva.",
+    date: "2026-06-14",
+    relatedCategory: "marketing",
+    intro: [
+      "El marketing es uno de los campos donde la IA ahorra más tiempo: redactar copys, generar anuncios, optimizar SEO o programar redes sociales se hace en minutos.",
+      "Estas son las 7 mejores IA para marketing y redes sociales en 2026, para cubrir desde la creación de contenido hasta la analítica.",
+    ],
+    items: [
+      {
+        slug: "jasper",
+        body: "Plataforma de IA pensada para equipos de marketing: campañas, blogs y anuncios coherentes con la voz de tu marca.",
+      },
+      {
+        slug: "copy-ai",
+        body: "Genera copys de venta, emails y descripciones en segundos. Muy práctico para producir mucho contenido corto rápido.",
+      },
+      {
+        slug: "adcreative",
+        body: "Crea creatividades publicitarias optimizadas para convertir, con variantes listas para tus campañas de ads.",
+      },
+      {
+        slug: "semrush",
+        body: "La navaja suiza del SEO y el marketing, con funciones de IA para keywords, contenido y análisis de la competencia.",
+      },
+      {
+        slug: "hubspot",
+        body: "CRM y plataforma de marketing con IA integrada para automatizar emails, contenido y la relación con tus clientes.",
+      },
+      {
+        slug: "buffer",
+        body: "Programa y gestiona tus redes sociales con ayuda de IA para generar ideas y textos de publicaciones.",
+      },
+      {
+        slug: "metricool",
+        body: "Analítica y planificación de redes en un solo panel, con asistente de IA para mejorar tus publicaciones.",
+      },
+    ],
+    outro: [
+      "Combina una herramienta de contenido (Jasper o Copy.ai) con una de SEO (Semrush) y otra de gestión de redes (Buffer o Metricool) para cubrir todo tu marketing.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-estudiar",
+    title: "Las 8 mejores IA para estudiar en 2026",
+    description:
+      "Las mejores herramientas de inteligencia artificial para estudiar: resumir, investigar, entender artículos y organizar tus apuntes.",
+    date: "2026-06-13",
+    relatedCategory: "investigacion",
+    intro: [
+      "La IA se ha convertido en un compañero de estudio excelente: resume temas, explica conceptos difíciles, te ayuda a investigar y organiza tus apuntes.",
+      "Estas son las 8 mejores IA para estudiar en 2026, pensadas tanto para el instituto como para la universidad o la investigación.",
+    ],
+    items: [
+      {
+        slug: "chatgpt",
+        body: "El tutor universal: explica cualquier tema a tu nivel, te hace preguntas de repaso y resuelve dudas al instante.",
+      },
+      {
+        slug: "perplexity",
+        body: "Un buscador con IA que responde citando fuentes reales. Perfecto para investigar y contrastar información fiable.",
+      },
+      {
+        slug: "notion-ai",
+        body: "Organiza apuntes, resume tus notas y crea esquemas dentro de tu espacio de estudio en Notion.",
+      },
+      {
+        slug: "elicit",
+        body: "Asistente de investigación que encuentra y resume artículos científicos. Imprescindible para trabajos académicos.",
+      },
+      {
+        slug: "consensus",
+        body: "Responde preguntas con evidencia extraída de estudios científicos. Ideal para fundamentar tus trabajos con datos.",
+      },
+      {
+        slug: "scispace",
+        body: "Te ayuda a leer y entender papers complejos, explicándote cada parte en lenguaje sencillo.",
+      },
+      {
+        slug: "scholarcy",
+        body: "Resume artículos y libros largos en fichas con los puntos clave, ahorrándote horas de lectura.",
+      },
+      {
+        slug: "quillbot",
+        body: "Parafrasea y mejora tus textos, útil para redactar trabajos con tus propias palabras y evitar el plagio.",
+      },
+    ],
+    outro: [
+      "Apóyate en ChatGPT y Perplexity para el día a día, y suma Elicit o SciSpace cuando tengas que investigar a fondo.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-editar-fotos",
+    title: "Las 7 mejores IA para editar fotos en 2026",
+    description:
+      "Las mejores herramientas de IA para editar y mejorar fotos: retoque, restauración, eliminar fondos y aumentar la calidad.",
+    date: "2026-06-12",
+    relatedCategory: "fotografia",
+    intro: [
+      "Editar fotos con inteligencia artificial te permite conseguir resultados profesionales en segundos: mejorar la calidad, retocar retratos, quitar objetos o restaurar imágenes antiguas.",
+      "Estas son las 7 mejores IA para editar fotos en 2026, para aficionados y fotógrafos profesionales.",
+    ],
+    items: [
+      {
+        slug: "adobe-lightroom",
+        body: "El estándar profesional para revelado y edición de fotos, con funciones de IA para enmascarar, eliminar y mejorar.",
+      },
+      {
+        slug: "luminar-neo",
+        body: "Editor potente con herramientas de IA para cielo, retrato y eliminación de elementos en un par de clics.",
+      },
+      {
+        slug: "topaz-photo-ai",
+        body: "El mejor para maximizar la nitidez, reducir ruido y ampliar fotos sin perder calidad gracias a la IA.",
+      },
+      {
+        slug: "evoto",
+        body: "Retoque de retratos masivo con IA: piel, maquillaje y color en muchas fotos a la vez. Ideal para sesiones grandes.",
+      },
+      {
+        slug: "remini",
+        body: "Restaura y mejora fotos antiguas o borrosas, recuperando detalle y nitidez con un solo toque.",
+      },
+      {
+        slug: "magnific",
+        body: "Escalador con IA que amplía imágenes añadiendo detalle realista. Espectacular para upscaling creativo.",
+      },
+      {
+        slug: "photoroom",
+        body: "Elimina y cambia fondos al instante. Perfecto para fotos de producto y ecommerce.",
+      },
+    ],
+    outro: [
+      "Para edición seria, Lightroom y Topaz son la base. Para tareas rápidas (fondos, restaurar, ampliar), Photoroom, Remini y Magnific te resuelven en segundos.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-hacer-musica",
+    title: "Las 7 mejores IA para hacer música en 2026",
+    description:
+      "Las mejores herramientas de IA para crear música: canciones completas, instrumentales y música libre de derechos a partir de texto.",
+    date: "2026-06-11",
+    relatedCategory: "musica",
+    intro: [
+      "Crear música con inteligencia artificial está al alcance de cualquiera: puedes generar canciones completas, instrumentales o música de fondo sin saber tocar ningún instrumento.",
+      "Estas son las 7 mejores IA para hacer música en 2026, desde canciones con voz hasta música libre de derechos para tus vídeos.",
+    ],
+    items: [
+      {
+        slug: "suno",
+        body: "El referente para crear canciones completas con voz e instrumentos a partir de una simple descripción. Resultados sorprendentes.",
+      },
+      {
+        slug: "udio",
+        body: "Gran rival de Suno, destaca por la calidad del sonido y el control sobre el estilo de la canción.",
+      },
+      {
+        slug: "riffusion",
+        body: "Genera canciones con voz e instrumentos desde texto, con un enfoque creativo y gratuito para empezar.",
+      },
+      {
+        slug: "aiva",
+        body: "Especializado en composición instrumental y bandas sonoras. Perfecto para música épica, cine y videojuegos.",
+      },
+      {
+        slug: "soundraw",
+        body: "Crea música libre de derechos personalizable por género y estado de ánimo. Ideal para creadores de contenido.",
+      },
+      {
+        slug: "mubert",
+        body: "Genera música royalty-free para streams, vídeos y apps a partir de texto, con un catálogo enorme.",
+      },
+      {
+        slug: "beatoven",
+        body: "Música de fondo única y libre de derechos, ajustada al tono de tu vídeo o pódcast.",
+      },
+    ],
+    outro: [
+      "Para canciones con voz, Suno y Udio lideran. Si buscas música de fondo sin problemas de derechos, Soundraw, Mubert o Beatoven son la opción segura.",
+    ],
+  },
+  {
+    slug: "mejores-ia-atencion-al-cliente",
+    title: "Las 7 mejores IA para atención al cliente en 2026",
+    description:
+      "Las mejores herramientas de IA para atención al cliente: chatbots, automatización de tickets y soporte 24/7 para tu negocio.",
+    date: "2026-06-10",
+    relatedCategory: "mensajeria",
+    intro: [
+      "La atención al cliente es uno de los usos más rentables de la IA: chatbots que resuelven dudas al instante, automatización de tickets y soporte disponible 24/7 sin ampliar tu equipo.",
+      "Estas son las 7 mejores IA para atención al cliente en 2026, para tiendas online y empresas de cualquier tamaño.",
+    ],
+    items: [
+      {
+        slug: "intercom",
+        body: "Plataforma de soporte con su agente de IA (Fin) que resuelve consultas de forma autónoma. Uno de los líderes del sector.",
+      },
+      {
+        slug: "zendesk",
+        body: "Suite completa de atención al cliente con agentes y automatizaciones de IA para gestionar grandes volúmenes.",
+      },
+      {
+        slug: "tidio",
+        body: "Atención al cliente con el chatbot Lyro, ideal para pequeñas tiendas online que quieren automatizar respuestas.",
+      },
+      {
+        slug: "ada",
+        body: "Automatización del servicio al cliente con agentes de IA en múltiples canales e idiomas.",
+      },
+      {
+        slug: "gorgias",
+        body: "Especializado en ecommerce: responde y automatiza tickets conectado a tu tienda (Shopify y más).",
+      },
+      {
+        slug: "forethought",
+        body: "IA generativa que resuelve, prioriza y asiste tickets, reduciendo el tiempo de respuesta de tu equipo.",
+      },
+      {
+        slug: "drift",
+        body: "Marketing conversacional y soporte con chatbots de IA para captar y atender clientes en tiempo real.",
+      },
+    ],
+    outro: [
+      "Para ecommerce, Tidio y Gorgias encajan muy bien. Si necesitas una solución completa para empresa, Intercom y Zendesk son apuestas seguras.",
+    ],
+  },
 ];
 
 const POST_BY_SLUG = new Map(POSTS.map((p) => [p.slug, p]));
