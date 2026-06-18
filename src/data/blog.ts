@@ -176,6 +176,145 @@ export const POSTS: BlogPost[] = [
       "Con estas herramientas puedes cubrir chat, imagen, audio y código sin pagar un euro. Cuando una se te quede corta, siempre puedes dar el salto a su versión de pago.",
     ],
   },
+  {
+    slug: "mejores-ia-para-programar",
+    title: "Las 8 mejores IA para programar en 2026",
+    description:
+      "Las mejores herramientas de inteligencia artificial para programar: autocompletado, asistentes de código y editores con IA, comparados.",
+    date: "2026-06-18",
+    relatedCategory: "programacion",
+    intro: [
+      "La programación es, junto a la escritura, el campo donde la inteligencia artificial ha tenido un impacto más inmediato. Hoy es difícil encontrar a un desarrollador que no use al menos un asistente de IA para escribir, depurar o entender código.",
+      "Hemos reunido las 8 IA para programar más potentes y populares de 2026, desde autocompletado en tu editor hasta agentes capaces de crear funciones enteras.",
+    ],
+    items: [
+      {
+        slug: "github-copilot",
+        body: "El asistente de código más usado del mundo, integrado en VS Code y otros editores. Autocompleta líneas y funciones completas mientras escribes. Gratis para estudiantes y proyectos open source.",
+      },
+      {
+        slug: "cursor",
+        body: "Un editor de código construido alrededor de la IA: puedes editar y refactorizar proyectos enteros hablando con el modelo. El favorito de muchos desarrolladores profesionales.",
+      },
+      {
+        slug: "claude-code",
+        body: "El agente de programación de Anthropic, que trabaja directamente en tu terminal y entiende todo tu repositorio. Brilla en tareas complejas y multi-archivo.",
+      },
+      {
+        slug: "windsurf",
+        body: "Otro editor con IA muy pulido, con un modo agente que ejecuta tareas de varios pasos por ti. Gran alternativa a Cursor.",
+      },
+      {
+        slug: "v0",
+        body: "Especializado en interfaces: describes una pantalla y genera el código de React/Tailwind listo para usar. Ideal para prototipar UIs rápido.",
+      },
+      {
+        slug: "bolt",
+        body: "Crea aplicaciones web completas desde el navegador a partir de una descripción. Perfecto para validar una idea sin montar nada.",
+      },
+      {
+        slug: "replit",
+        body: "Un entorno de desarrollo en la nube con IA integrada (Agent) que construye y despliega apps. Muy útil para aprender y para proyectos rápidos.",
+      },
+      {
+        slug: "tabnine",
+        body: "Autocompletado de código centrado en la privacidad, con opción de ejecutarse de forma privada. Buena elección para empresas con datos sensibles.",
+      },
+    ],
+    outro: [
+      "Si empiezas, GitHub Copilot es la puerta de entrada más sencilla. Si quieres dar el salto a un flujo de trabajo totalmente con IA, prueba Cursor o Claude Code.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-crear-videos",
+    title: "Las 8 mejores IA para crear vídeos en 2026",
+    description:
+      "Guía de las mejores herramientas de IA para generar y editar vídeos: desde clips a partir de texto hasta avatares y edición automática.",
+    date: "2026-06-18",
+    relatedCategory: "video",
+    intro: [
+      "El vídeo generado por inteligencia artificial ha dado un salto enorme: hoy puedes crear clips realistas a partir de una frase, poner a hablar a un avatar o editar un vídeo largo en minutos.",
+      "Estas son las 8 IA para crear vídeos que marcan la diferencia en 2026, tanto para generar desde cero como para editar lo que ya tienes.",
+    ],
+    items: [
+      {
+        slug: "runway",
+        body: "Pionero y referente en vídeo con IA. Genera y edita clips con una calidad y unos controles que lo mantienen en cabeza del sector.",
+      },
+      {
+        slug: "sora",
+        body: "El generador de vídeo de OpenAI, capaz de crear escenas sorprendentemente realistas y coherentes a partir de texto.",
+      },
+      {
+        slug: "kling",
+        body: "Uno de los modelos de vídeo más impresionantes, con movimientos muy naturales y clips de larga duración.",
+      },
+      {
+        slug: "veo",
+        body: "La apuesta de Google para vídeo generativo, con gran calidad y comprensión del lenguaje natural.",
+      },
+      {
+        slug: "pika",
+        body: "Muy fácil de usar y con efectos creativos divertidos. Perfecto para contenido de redes sociales.",
+      },
+      {
+        slug: "heygen",
+        body: "El líder en avatares con IA: crea vídeos de un presentador hablando en decenas de idiomas a partir de un guion. Ideal para formación y marketing.",
+      },
+      {
+        slug: "descript",
+        body: "Edita vídeo como si fuera un documento de texto: borras palabras y desaparecen del vídeo. Revoluciona la edición de pódcast y tutoriales.",
+      },
+      {
+        slug: "luma-ai",
+        body: "Genera vídeo y escenas 3D con gran realismo, con una capa gratuita para empezar a experimentar.",
+      },
+    ],
+    outro: [
+      "Para generar vídeo desde cero, Runway y Sora lideran. Si lo tuyo es presentar o formar, HeyGen es imbatible; y para editar rápido, Descript.",
+    ],
+  },
+  {
+    slug: "chatgpt-vs-claude-vs-gemini",
+    title: "ChatGPT vs Claude vs Gemini: ¿cuál es la mejor IA en 2026?",
+    description:
+      "Comparativa de las grandes IA de chat: ChatGPT, Claude y Gemini, más alternativas. Cuál elegir según lo que necesites.",
+    date: "2026-06-18",
+    relatedCategory: "chatbots",
+    intro: [
+      "Si solo vas a usar un asistente de IA, lo más probable es que dudes entre ChatGPT, Claude y Gemini. Los tres son excelentes, pero cada uno destaca en cosas distintas.",
+      "Te resumimos las fortalezas de cada uno (y de tres alternativas que merece la pena conocer) para que elijas con criterio. Puedes probarlos todos desde nuestro catálogo.",
+    ],
+    items: [
+      {
+        slug: "chatgpt",
+        body: "El más completo y versátil. Genera texto, imágenes y código, navega por internet y tiene el mayor ecosistema de extensiones. Si dudas, es la apuesta más segura para empezar.",
+      },
+      {
+        slug: "claude",
+        body: "El mejor para escribir y para textos largos. Sus respuestas suenan más naturales y cuidadas, y destaca en análisis de documentos y programación. La opción favorita de quien trabaja con texto.",
+      },
+      {
+        slug: "gemini",
+        body: "La IA de Google, fuerte en multimodalidad e integrada con Gmail, Docs y el resto de su ecosistema. Muy cómoda si vives dentro de las herramientas de Google.",
+      },
+      {
+        slug: "perplexity",
+        body: "Más que un chat, un buscador con IA: responde citando fuentes reales y actualizadas. La mejor opción cuando necesitas información fiable y verificable.",
+      },
+      {
+        slug: "deepseek",
+        body: "Una alternativa gratuita y muy capaz, especialmente buena en razonamiento y código. Imbatible en relación calidad/precio.",
+      },
+      {
+        slug: "grok",
+        body: "La IA de xAI integrada en X (Twitter), con acceso a información en tiempo real y un tono más desenfadado.",
+      },
+    ],
+    outro: [
+      "No hay un único ganador: para uso general elige ChatGPT, para escribir Claude, para el ecosistema Google Gemini, y para investigar con fuentes Perplexity. Lo mejor es probar y quedarte con el que mejor se adapte a ti.",
+    ],
+  },
 ];
 
 const POST_BY_SLUG = new Map(POSTS.map((p) => [p.slug, p]));
