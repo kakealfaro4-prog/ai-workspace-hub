@@ -19,6 +19,7 @@ const FREE = new Set<string>([
   "flux",
   "upscayl",
   "gemma",
+  "semantic-scholar",
 ]);
 
 /** De pago o enterprise, sin una capa gratuita útil (solo prueba/demo). */
@@ -42,6 +43,13 @@ const PAID = new Set<string>([
   "workable",
   "braze",
   "iterable",
+  "hirevue",
+  "eightfold",
+  "gong",
+  "clari",
+  "6sense",
+  "alphasense",
+  "crayon",
 ]);
 
 export function getPricing(slug: string): Pricing {

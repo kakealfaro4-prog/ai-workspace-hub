@@ -1618,6 +1618,317 @@ export const TOOLS: readonly Tool[] = [
     categories: ["automatizacion", "marketing"],
     tags: ["datos", "ventas", "prospección", "ia"],
   },
+
+  // --- Recursos Humanos ---
+  {
+    slug: "hirevue",
+    name: "HireVue",
+    url: "https://www.hirevue.com",
+    description:
+      "Plataforma de entrevistas en vídeo y evaluaciones de candidatos con análisis asistido por IA.",
+    categories: ["recursos-humanos"],
+    tags: ["reclutamiento", "entrevistas", "evaluación", "rrhh"],
+  },
+  {
+    slug: "eightfold",
+    name: "Eightfold AI",
+    url: "https://eightfold.ai",
+    description:
+      "Inteligencia de talento que usa IA para encontrar, contratar y desarrollar a las personas adecuadas.",
+    categories: ["recursos-humanos"],
+    tags: ["talento", "reclutamiento", "ia", "rrhh"],
+  },
+  {
+    slug: "textio",
+    name: "Textio",
+    url: "https://textio.com",
+    description:
+      "Asistente de escritura con IA para redactar ofertas de empleo y feedback inclusivos y efectivos.",
+    categories: ["recursos-humanos", "escritura"],
+    tags: ["escritura", "ofertas", "inclusión", "rrhh"],
+  },
+  {
+    slug: "paradox",
+    name: "Paradox",
+    url: "https://www.paradox.ai",
+    description:
+      "Asistente de reclutamiento conversacional (Olivia) que automatiza el cribado y la programación de entrevistas.",
+    categories: ["recursos-humanos", "automatizacion"],
+    tags: ["reclutamiento", "chatbot", "automatización", "rrhh"],
+  },
+  {
+    slug: "moonhub",
+    name: "Moonhub",
+    url: "https://www.moonhub.ai",
+    description:
+      "Reclutador con IA que busca candidatos en bases de datos masivas mediante lenguaje natural.",
+    categories: ["recursos-humanos"],
+    tags: ["reclutamiento", "búsqueda", "ia", "rrhh"],
+  },
+
+  // --- Investigación ---
+  {
+    slug: "elicit",
+    name: "Elicit",
+    url: "https://elicit.com",
+    description:
+      "Asistente de investigación que encuentra, resume y extrae datos de artículos científicos con IA.",
+    categories: ["investigacion"],
+    tags: ["investigación", "papers", "ciencia", "resúmenes"],
+  },
+  {
+    slug: "consensus",
+    name: "Consensus",
+    url: "https://consensus.app",
+    description:
+      "Buscador con IA que responde preguntas con evidencia extraída de estudios científicos reales.",
+    categories: ["investigacion"],
+    tags: ["investigación", "ciencia", "evidencia", "búsqueda"],
+  },
+  {
+    slug: "scispace",
+    name: "SciSpace",
+    url: "https://scispace.com",
+    description:
+      "Copiloto para leer, entender y analizar artículos académicos, con explicaciones al instante.",
+    categories: ["investigacion"],
+    tags: ["investigación", "papers", "lectura", "académico"],
+  },
+  {
+    slug: "scholarcy",
+    name: "Scholarcy",
+    url: "https://www.scholarcy.com",
+    description:
+      "Resume artículos, informes y libros largos en fichas con los puntos clave gracias a la IA.",
+    categories: ["investigacion", "escritura"],
+    tags: ["resúmenes", "investigación", "fichas", "académico"],
+  },
+  {
+    slug: "semantic-scholar",
+    name: "Semantic Scholar",
+    url: "https://www.semanticscholar.org",
+    description:
+      "Buscador académico gratuito impulsado por IA para descubrir y entender literatura científica.",
+    categories: ["investigacion"],
+    tags: ["investigación", "buscador", "ciencia", "gratis"],
+  },
+
+  // --- Atención al Cliente / Mensajería ---
+  {
+    slug: "tidio",
+    name: "Tidio",
+    url: "https://www.tidio.com",
+    description:
+      "Atención al cliente con chatbots de IA (Lyro) que resuelven consultas de forma automática.",
+    categories: ["mensajeria"],
+    tags: ["soporte", "chatbot", "ia", "ecommerce"],
+  },
+  {
+    slug: "ada",
+    name: "Ada",
+    url: "https://www.ada.cx",
+    description:
+      "Plataforma de automatización del servicio al cliente con agentes de IA en múltiples canales.",
+    categories: ["mensajeria", "automatizacion"],
+    tags: ["soporte", "agentes", "automatización", "ia"],
+  },
+  {
+    slug: "forethought",
+    name: "Forethought",
+    url: "https://forethought.ai",
+    description:
+      "IA generativa para soporte que resuelve, prioriza y asiste tickets de atención al cliente.",
+    categories: ["mensajeria"],
+    tags: ["soporte", "tickets", "ia", "automatización"],
+  },
+  {
+    slug: "gorgias",
+    name: "Gorgias",
+    url: "https://www.gorgias.com",
+    description:
+      "Servicio de atención al cliente para ecommerce con respuestas y automatizaciones de IA.",
+    categories: ["mensajeria"],
+    tags: ["soporte", "ecommerce", "ia", "tickets"],
+  },
+
+  // --- Negocios ---
+  {
+    slug: "gong",
+    name: "Gong",
+    url: "https://www.gong.io",
+    description:
+      "Inteligencia de ingresos que analiza llamadas y emails de ventas con IA para mejorar resultados.",
+    categories: ["negocios", "analitica"],
+    tags: ["ventas", "análisis", "ia", "revenue"],
+  },
+  {
+    slug: "clari",
+    name: "Clari",
+    url: "https://www.clari.com",
+    description:
+      "Plataforma de operaciones de ingresos con IA para predecir y gestionar el pipeline de ventas.",
+    categories: ["negocios", "analitica"],
+    tags: ["ventas", "previsión", "pipeline", "ia"],
+  },
+  {
+    slug: "6sense",
+    name: "6sense",
+    url: "https://6sense.com",
+    description:
+      "Plataforma de marketing y ventas basada en IA predictiva para identificar cuentas listas para comprar.",
+    categories: ["negocios", "marketing"],
+    tags: ["abm", "predictivo", "ventas", "ia"],
+  },
+  {
+    slug: "crayon",
+    name: "Crayon",
+    url: "https://www.crayon.co",
+    description:
+      "Inteligencia competitiva con IA que rastrea y resume los movimientos de tus competidores.",
+    categories: ["negocios", "analitica"],
+    tags: ["competencia", "inteligencia", "ia", "mercado"],
+  },
+  {
+    slug: "alphasense",
+    name: "AlphaSense",
+    url: "https://www.alpha-sense.com",
+    description:
+      "Motor de inteligencia de mercado con IA para buscar y analizar documentos financieros y de empresa.",
+    categories: ["negocios", "investigacion"],
+    tags: ["mercado", "finanzas", "inteligencia", "ia"],
+  },
+
+  // --- Fotografía ---
+  {
+    slug: "remini",
+    name: "Remini",
+    url: "https://remini.ai",
+    description:
+      "Mejora y restaura fotos antiguas o de baja calidad con IA, aumentando nitidez y detalle.",
+    categories: ["fotografia", "imagen"],
+    tags: ["mejora", "restauración", "fotos", "ia"],
+  },
+  {
+    slug: "aftershoot",
+    name: "Aftershoot",
+    url: "https://aftershoot.com",
+    description:
+      "Selecciona y edita miles de fotos automáticamente con IA, pensado para fotógrafos profesionales.",
+    categories: ["fotografia"],
+    tags: ["culling", "edición", "fotógrafos", "ia"],
+  },
+  {
+    slug: "imagen-ai",
+    name: "Imagen AI",
+    url: "https://imagen-ai.com",
+    description:
+      "Edición de fotos con IA que aprende tu estilo personal para revelar sesiones enteras en minutos.",
+    categories: ["fotografia"],
+    tags: ["edición", "fotógrafos", "estilo", "ia"],
+  },
+  {
+    slug: "evoto",
+    name: "Evoto",
+    url: "https://www.evoto.ai",
+    description:
+      "Editor de retratos con IA para retoque de piel, maquillaje y color de forma masiva y rápida.",
+    categories: ["fotografia"],
+    tags: ["retoque", "retratos", "edición", "ia"],
+  },
+  {
+    slug: "magnific",
+    name: "Magnific AI",
+    url: "https://magnific.ai",
+    description:
+      "Escalador y potenciador de imágenes con IA que añade detalle realista al ampliar fotos.",
+    categories: ["fotografia", "imagen"],
+    tags: ["upscaler", "detalle", "ia", "ampliar"],
+  },
+
+  // --- Música ---
+  {
+    slug: "mubert",
+    name: "Mubert",
+    url: "https://mubert.com",
+    description:
+      "Genera música libre de derechos con IA para vídeos, streams y aplicaciones a partir de texto.",
+    categories: ["musica", "audio"],
+    tags: ["música", "royalty-free", "generador", "ia"],
+  },
+  {
+    slug: "beatoven",
+    name: "Beatoven.ai",
+    url: "https://www.beatoven.ai",
+    description:
+      "Crea música de fondo única y libre de derechos con IA, ajustada al tono de tu contenido.",
+    categories: ["musica", "audio"],
+    tags: ["música", "fondo", "royalty-free", "ia"],
+  },
+  {
+    slug: "boomy",
+    name: "Boomy",
+    url: "https://boomy.com",
+    description:
+      "Crea canciones originales con IA en segundos, aunque no tengas conocimientos musicales.",
+    categories: ["musica"],
+    tags: ["música", "canciones", "generador", "ia"],
+  },
+  {
+    slug: "loudly",
+    name: "Loudly",
+    url: "https://www.loudly.com",
+    description:
+      "Generador de música con IA con un gran catálogo y control de estilo, ritmo y duración.",
+    categories: ["musica", "audio"],
+    tags: ["música", "generador", "royalty-free", "ia"],
+  },
+  {
+    slug: "riffusion",
+    name: "Riffusion",
+    url: "https://www.riffusion.com",
+    description:
+      "Crea canciones completas con voz e instrumentos a partir de una descripción de texto con IA.",
+    categories: ["musica"],
+    tags: ["música", "canciones", "voz", "ia"],
+  },
+
+  // --- Email ---
+  {
+    slug: "shortwave",
+    name: "Shortwave",
+    url: "https://www.shortwave.com",
+    description:
+      "Cliente de email con IA que resume hilos, redacta respuestas y organiza tu bandeja de entrada.",
+    categories: ["email", "productividad"],
+    tags: ["email", "resúmenes", "redacción", "ia"],
+  },
+  {
+    slug: "lavender",
+    name: "Lavender",
+    url: "https://www.lavender.ai",
+    description:
+      "Coach de emails de ventas con IA que puntúa y mejora tus mensajes para conseguir más respuestas.",
+    categories: ["email", "marketing"],
+    tags: ["ventas", "email", "coach", "ia"],
+  },
+  {
+    slug: "instantly",
+    name: "Instantly",
+    url: "https://instantly.ai",
+    description:
+      "Plataforma de email frío con IA para escalar campañas de captación con buena entregabilidad.",
+    categories: ["email", "marketing"],
+    tags: ["email frío", "ventas", "campañas", "ia"],
+  },
+  {
+    slug: "smartwriter",
+    name: "SmartWriter",
+    url: "https://www.smartwriter.ai",
+    description:
+      "Genera emails de captación personalizados a escala con IA a partir de datos de cada contacto.",
+    categories: ["email", "marketing"],
+    tags: ["email", "personalización", "ventas", "ia"],
+  },
 ] as const;
 
 // --- Selectores de solo lectura sobre el catálogo --------------------------
