@@ -73,6 +73,13 @@ export default function RootLayout({
           src="https://embeds.iubenda.com/widgets/356bada1-71d4-48d1-a752-ff80aadf4116.js"
           strategy="afterInteractive"
         />
+        {/* Google AdSense. */}
+        <Script
+          id="adsbygoogle-init"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7714455039666444"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );
