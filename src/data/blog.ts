@@ -589,6 +589,268 @@ export const POSTS: BlogPost[] = [
       "Para ecommerce, Tidio y Gorgias encajan muy bien. Si necesitas una solución completa para empresa, Intercom y Zendesk son apuestas seguras.",
     ],
   },
+  {
+    slug: "mejores-ia-para-voz",
+    title: "Las 7 mejores IA de voz y texto a voz en 2026",
+    description:
+      "Las mejores herramientas de IA para generar voces realistas, clonar tu voz y convertir texto en audio para vídeos, pódcast y locuciones.",
+    date: "2026-06-24",
+    relatedCategory: "audio",
+    intro: [
+      "Las voces generadas por inteligencia artificial han alcanzado un realismo que era impensable hace poco: hoy puedes convertir un texto en una locución natural, clonar tu propia voz o doblar un vídeo a otro idioma en minutos.",
+      "Estas son las 7 mejores IA de voz y texto a voz de 2026, ideales para vídeos, pódcast, audiolibros y accesibilidad.",
+    ],
+    items: [
+      {
+        slug: "elevenlabs",
+        body: "El referente absoluto en voces con IA. Genera locuciones increíblemente naturales y clona voces con muy pocas muestras. La opción favorita de creadores y estudios.",
+      },
+      {
+        slug: "murf",
+        body: "Estudio de voz en off pensado para empresas: decenas de voces profesionales, control de entonación y sincronización con tus diapositivas o vídeos.",
+      },
+      {
+        slug: "speechify",
+        body: "El mejor para escuchar cualquier texto: convierte artículos, PDFs y libros en audio para consumirlos mientras haces otras cosas.",
+      },
+      {
+        slug: "lovo",
+        body: "Plataforma de voz y locución con cientos de voces e idiomas, muy usada para vídeos de marketing y formación.",
+      },
+      {
+        slug: "naturalreader",
+        body: "Lector de texto a voz sencillo y con buena capa gratuita. Perfecto para estudiar o revisar tus propios escritos en voz alta.",
+      },
+      {
+        slug: "fish-audio",
+        body: "Una opción abierta y flexible para síntesis y clonación de voz, popular entre quien quiere personalizar y experimentar.",
+      },
+      {
+        slug: "amazon-polly",
+        body: "El servicio de texto a voz de AWS, robusto y económico, ideal para integrarlo en apps y productos a escala.",
+      },
+    ],
+    outro: [
+      "Para máxima calidad y clonación, ElevenLabs es la apuesta segura. Si solo quieres escuchar tus textos, Speechify o NaturalReader te bastan; y para integrarlo en un producto, Amazon Polly.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-transcribir",
+    title: "Las 8 mejores IA para transcribir audio y vídeo en 2026",
+    description:
+      "Las mejores herramientas de IA para transcribir reuniones, entrevistas y vídeos a texto con alta precisión y en varios idiomas.",
+    date: "2026-06-23",
+    relatedCategory: "audio",
+    intro: [
+      "Pasar audio o vídeo a texto solía ser una de las tareas más tediosas que existen. Con la inteligencia artificial, transcribir una reunión, una entrevista o un pódcast es cuestión de minutos y con una precisión sorprendente.",
+      "Estas son las 8 mejores IA para transcribir de 2026, desde modelos gratuitos hasta plataformas profesionales con resúmenes automáticos.",
+    ],
+    items: [
+      {
+        slug: "whisper",
+        body: "El modelo de transcripción de OpenAI, gratuito y open source. Una precisión excelente en decenas de idiomas y la base de muchas otras herramientas.",
+      },
+      {
+        slug: "otter-ai",
+        body: "El más popular para reuniones: transcribe en directo, identifica a los participantes y genera un resumen con los puntos clave.",
+      },
+      {
+        slug: "fireflies",
+        body: "Asistente que se une a tus videollamadas, las transcribe y crea notas y tareas automáticamente. Ideal para equipos.",
+      },
+      {
+        slug: "notta",
+        body: "Transcripción rápida y multilingüe con buena capa gratuita, perfecta para entrevistas y clases.",
+      },
+      {
+        slug: "happyscribe",
+        body: "Transcripción y subtítulos profesionales con opción de revisión humana. Muy usado por periodistas y productoras.",
+      },
+      {
+        slug: "trint",
+        body: "Plataforma orientada a medios: transcribe, edita y colabora sobre el texto con tu equipo en un mismo lugar.",
+      },
+      {
+        slug: "rev",
+        body: "Combina transcripción por IA con servicio humano de alta precisión. La opción cuando necesitas exactitud absoluta.",
+      },
+      {
+        slug: "assemblyai",
+        body: "Una API de transcripción potentísima para desarrolladores que quieren añadir voz a texto a sus propias aplicaciones.",
+      },
+    ],
+    outro: [
+      "Si quieres algo gratis, Whisper es imbatible. Para reuniones, Otter o Fireflies; y si necesitas máxima precisión con revisión humana, Rev o HappyScribe.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-presentaciones",
+    title: "Las 6 mejores IA para crear presentaciones en 2026",
+    description:
+      "Las mejores herramientas de IA para crear presentaciones y diapositivas profesionales en minutos a partir de un tema o un texto.",
+    date: "2026-06-22",
+    relatedCategory: "diseno",
+    intro: [
+      "Crear una buena presentación lleva horas: estructurar, diseñar, buscar imágenes... La inteligencia artificial se encarga de todo eso por ti, generando diapositivas profesionales a partir de un simple tema o un documento.",
+      "Estas son las 6 mejores IA para crear presentaciones en 2026, para clase, trabajo o una propuesta de negocio.",
+    ],
+    items: [
+      {
+        slug: "gamma",
+        body: "El líder actual: escribes un tema y genera una presentación completa, con diseño moderno y editable. Rápido y con un acabado excelente.",
+      },
+      {
+        slug: "beautiful-ai",
+        body: "Crea diapositivas que se ajustan solas a un diseño profesional mientras añades contenido. Ideal para presentaciones de empresa.",
+      },
+      {
+        slug: "canva",
+        body: "Su asistente de IA genera presentaciones a partir de una idea y te da acceso a una enorme biblioteca de plantillas y recursos.",
+      },
+      {
+        slug: "visme",
+        body: "Muy potente para presentaciones con infografías y datos, con plantillas pensadas para comunicar visualmente.",
+      },
+      {
+        slug: "microsoft-designer",
+        body: "La herramienta de diseño de Microsoft con IA, cómoda si trabajas dentro del ecosistema de Office.",
+      },
+      {
+        slug: "adobe-express",
+        body: "Diseño rápido con IA de Adobe para diapositivas, redes y gráficos, con calidad de marca y recursos con licencia.",
+      },
+    ],
+    outro: [
+      "Para empezar de cero a partir de una idea, Gamma es lo más rápido. Si quieres un acabado de empresa muy cuidado, Beautiful.ai o Visme.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-crear-paginas-web",
+    title: "Las 7 mejores IA para crear páginas web en 2026",
+    description:
+      "Las mejores herramientas de IA para crear páginas y aplicaciones web sin programar: desde landings hasta sitios completos a partir de texto.",
+    date: "2026-06-21",
+    relatedCategory: "creacion-web",
+    intro: [
+      "Crear una página web ya no requiere saber programar ni contratar a nadie. Con la inteligencia artificial puedes describir lo que quieres y obtener un sitio completo, una landing page o incluso una aplicación funcional en minutos.",
+      "Estas son las 7 mejores IA para crear páginas web en 2026, para emprendedores, diseñadores y cualquiera con una idea.",
+    ],
+    items: [
+      {
+        slug: "framer",
+        body: "Diseño y publicación de webs con IA: generas secciones y páginas a partir de texto y obtienes un sitio rápido y muy bien diseñado.",
+      },
+      {
+        slug: "webflow",
+        body: "El favorito de los diseñadores profesionales, ahora con IA para acelerar el diseño visual sin renunciar al control total.",
+      },
+      {
+        slug: "wix-adi",
+        body: "Te crea una web completa respondiendo unas preguntas. La opción más sencilla para tener algo online cuanto antes.",
+      },
+      {
+        slug: "v0",
+        body: "Describes una pantalla y genera el código de la interfaz (React/Tailwind) listo para usar. Ideal para prototipar rápido.",
+      },
+      {
+        slug: "lovable",
+        body: "Construye aplicaciones web completas a partir de una conversación, conectando frontend y datos. Perfecto para validar una idea.",
+      },
+      {
+        slug: "bolt",
+        body: "Crea y despliega apps web desde el navegador describiendo lo que necesitas. Muy útil para pasar de la idea al producto.",
+      },
+      {
+        slug: "unbounce",
+        body: "Especialista en landing pages que convierten, con IA para generar y optimizar textos orientados a ventas.",
+      },
+    ],
+    outro: [
+      "Para una web de marca bonita y rápida, Framer o Webflow. Si lo tuyo es una app o un producto, Lovable y Bolt; y para captar clientes, una landing con Unbounce.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-redes-sociales",
+    title: "Las 6 mejores IA para gestionar redes sociales en 2026",
+    description:
+      "Las mejores herramientas de IA para crear, programar y analizar contenido en redes sociales: ahorra horas y publica de forma constante.",
+    date: "2026-06-20",
+    relatedCategory: "redes-sociales",
+    intro: [
+      "Mantener las redes sociales activas se come muchísimo tiempo: pensar ideas, escribir, diseñar y programar. La inteligencia artificial automatiza buena parte de ese trabajo para que publiques de forma constante sin agotarte.",
+      "Estas son las 6 mejores IA para gestionar redes sociales en 2026, desde la generación de ideas hasta la programación y la analítica.",
+    ],
+    items: [
+      {
+        slug: "buffer",
+        body: "Programador de redes sencillo y fiable, con un asistente de IA que genera ideas y reescribe tus publicaciones para cada plataforma.",
+      },
+      {
+        slug: "metricool",
+        body: "Planifica, publica y analiza todas tus redes desde un único panel, con IA para mejorar el rendimiento de tus posts.",
+      },
+      {
+        slug: "taplio",
+        body: "Especializado en LinkedIn: genera contenido, encuentra ideas que funcionan y programa tus publicaciones para crecer tu marca personal.",
+      },
+      {
+        slug: "typefully",
+        body: "El mejor para escribir y programar hilos en X (Twitter), con IA para mejorar tus textos y analíticas claras.",
+      },
+      {
+        slug: "flick",
+        body: "Asistente de IA centrado en hashtags, ideas y planificación, muy útil para creadores en Instagram y TikTok.",
+      },
+      {
+        slug: "later",
+        body: "Planificador visual ideal para Instagram, con calendario de contenido y recomendaciones del mejor momento para publicar.",
+      },
+    ],
+    outro: [
+      "Para gestionar varias redes a la vez, Buffer o Metricool. Si te enfocas en una sola, Taplio para LinkedIn, Typefully para X y Later para Instagram.",
+    ],
+  },
+  {
+    slug: "mejores-ia-para-la-productividad",
+    title: "Las 6 mejores IA para ser más productivo en 2026",
+    description:
+      "Las mejores herramientas de IA para organizar tu trabajo, tomar notas, gestionar tareas y aprovechar mejor tu tiempo cada día.",
+    date: "2026-06-19",
+    relatedCategory: "productividad",
+    intro: [
+      "Más allá de escribir o generar imágenes, la inteligencia artificial brilla ayudándote a organizar el día a día: ordena tus notas, prioriza tareas, planifica tu agenda y resume tus reuniones automáticamente.",
+      "Estas son las 6 mejores IA para ser más productivo en 2026, para que dediques tu tiempo a lo que de verdad importa.",
+    ],
+    items: [
+      {
+        slug: "notion-ai",
+        body: "La IA integrada en Notion redacta, resume y organiza dentro de tu espacio de trabajo. Perfecta si ya gestionas ahí tus notas y proyectos.",
+      },
+      {
+        slug: "clickup-ai",
+        body: "Gestor de tareas y proyectos con IA que escribe, resume y genera subtareas, centralizando todo el trabajo de tu equipo.",
+      },
+      {
+        slug: "motion",
+        body: "Planifica tu agenda automáticamente con IA: encaja tus tareas y reuniones en el mejor hueco del día por ti.",
+      },
+      {
+        slug: "mem-ai",
+        body: "Una libreta de notas con IA que las organiza y conecta solas, recuperando lo que necesitas justo cuando lo buscas.",
+      },
+      {
+        slug: "otter-ai",
+        body: "Transcribe y resume tus reuniones automáticamente, para que no pierdas tiempo tomando notas mientras hablas.",
+      },
+      {
+        slug: "fireflies",
+        body: "Asistente que graba, transcribe y extrae tareas de tus videollamadas, dejando un registro accionable de cada reunión.",
+      },
+    ],
+    outro: [
+      "Si trabajas con notas y documentos, empieza por Notion AI o Mem. Para tu agenda, Motion; y para no perder nada de tus reuniones, Otter o Fireflies.",
+    ],
+  },
 ];
 
 const POST_BY_SLUG = new Map(POSTS.map((p) => [p.slug, p]));
